@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<div class="hello">
+
+<h1>Hallo;</h1>
+<h2>Ik ben Julian Vink. Web programmeur.</h2>
+    <div class="helloimg">
+        <a href="#project"><img src="img/button.png"></a>
+    </div>
+</div>
+
+<div class="project" id="project">
+   <div class="een">
+<h2>Wie ben ik?</h2>
+    <p>Mijn naam is Julian Vink en ik ben 18 jaar oud. Ik ben in Zwijndrecht geboren,
+        maar ik heb meer dan 10 jaar in Brazilië gewoond vanwege mijn moeder. In januari 2017
+        kwam ik terug naar Nederland en ben begonnen met de opleiding Applicatie- en mediaontwikkelaar.
+        Sindsdien ben ik erg geïnteresseerd geraakt in het maken van websites.</p>
+    </div>
+    <div class="gallerij">
+        <table cellspacing="0" cellpadding="0" style="border-bottom: 0" >
+            <tr>
+                <td style="text-align: center; border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/julian/tulpen.jpg"><img src="img/julian/tulpen.jpg" id="image1" alt="Tulpen" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/julian/metzus.jpg"><img src="img/julian/metzus.jpg" id="image2" alt="Metzus" width="230px" height="180px"/></a>
+                    <br />
+
+                </td>
+            </tr>
+            <tr style="border: 0">
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/julian/park.jpg"><img src="img/julian/park.jpg" id="image3" alt="Park" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/julian/Italie.jpg"><img src="img/julian/Italie.jpg" id="image4" alt="Italie" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="twee">
+    <h2>Mijn Opleiding</h2>
+<p>In de beroepsopleiding Applicatie- en mediaontwikkelaar leer je applicaties ontwerpen en ontwikkelen.
+    Je leert na te denken over applicaties en een helder ontwerp te maken voor een programma.
+    In het eerste leerjaar ben je volledig op school.
+    In het tweede leerjaar ga je in de vijfde en zesde periode stage lopen.</p>
+    </div>
+    <div class="gallerij2">
+        <table cellspacing="0" cellpadding="0" style="border-bottom: 0" >
+            <tr>
+                <td style="text-align: center; border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/school/laptop.jpg"><img src="img/school/laptop.jpg" id="image5" alt="Laptop" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/school/laptop2.jpg"><img src="img/school/laptop2.jpg" id="image6" alt="Laptop" width="230px" height="180px"/></a>
+                    <br />
+
+                </td>
+            </tr>
+            <tr style="border: 0">
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/school/laptop3.jpg"><img src="img/school/laptop3.jpg" id="image7" alt="Laptop" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+                <td style="text-align: center;border: 0; background-color: rgba(181, 243, 191, 0.83);">
+                    <a href="img/school/laptop4.jpg"><img src="img/school/laptop4.jpg" id="image8" alt="Laptop" width="230px" height="180px"/></a>
+                    <br />
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div class="a">
+        <ul>
+            <li><a href="CV%20Julian%20Vink.pdf" download="CV Julian Vink">Download mijn CV</a></li>
+            <li><a href="https://github.com/julianvink17/PortfolioWebsite">Github link</a></li>
+
+        </ul>
+</div>
+</div>
+<div class="contact">
+<h3>Julian Vink&nbsp;- Web programmeur</h3>
+    <div class="eerstep">
+    <p>Hier onder kunt u een bericht naar mij sturen.<br> Klik <a href="read.php"><ins>hier</ins></a> om alle berichten te lezen.</p>
+    </div>
+    <div id="social">
+        <div class="flex-item"><a href="#"><img src="img/facebook.png"></a> </div>
+        <div class="flex-item"><a href="#"><img src="img/twitter.png"></a> </div>
+        <div class="flex-item"><a href="#"><img src="img/google.png"></a> </div>
+    </div>
+    <div class="tweedep">
+    <p>Stuur een bericht.</p>
+    </div>
+<form action="message1.php" method="post" onSubmit="alert('Bericht gestuurd!')">
+
+    <input id="name" required type="text" name="name" placeholder="Naam *                                                                                        45" style="height:19px" maxlength="45">
+<br>
+
+    <input id="email" required type="email" name="email" placeholder="E-mail *                                                                                       45" style="height:19px" maxlength="45">
+<br>
+
+    <textarea id="message" name="message" placeholder="Schrijf een bericht!
+
+
+
+
+
+                                                                                                  100" style="height:118px" maxlength="100"></textarea>
+<br>
+    <input type="submit" value="Stuur">
+
+</form>
+    <div class="button2">
+    <a href="#"><img src="img/button2.png"></a>
+    </div>
+</div>
+
+
+<div class="copyright" id="copyright">
+<p>© Copyright by <a href="#">Julian Vink</a> </p>
+
+</div>
+</div>
+
+
+</body>
+</html>
