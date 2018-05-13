@@ -9,7 +9,7 @@
 
 <?php
 require_once "connect.php";
-$sql = $conn->prepare("select name, email, message from message2");
+$sql = $conn->prepare("select name, email, message from message");
 $sql->execute();
 echo "<div class='terug'>";
 echo "<a href='index.html'> Terug naar het portfolio </a>";
