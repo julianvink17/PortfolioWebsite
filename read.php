@@ -9,7 +9,7 @@
 
 <?php
 require_once "connect.php";
-$sql = $conn->prepare("select name, email, message from message");
+$sql = $conn->prepare("select name, email, message from message2");
 $sql->execute();
 echo "<div class='terug'>";
 echo "<a href='index.html'> Terug naar het portfolio </a>";
@@ -25,7 +25,7 @@ foreach ($sql as $rij) {
     echo "<tr style='text-align: center'>";
     echo "<td style='background-color: #ccf6e7'>" . $rij["name"] . "</td>";
     echo "<td style='background-color: #ccf6e7'>" . $rij["email"] . "</td>";
-    echo "<td style='background-color: #ccf6e7'>" . $rij["message"] . "</td>";
+    echo "<td>" . $rij["message"] . "</td>";
     echo "</tr>";
 }
 echo "</table><br/>";
